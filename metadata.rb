@@ -6,7 +6,7 @@ description      'Installs/Configures encrypted_volume'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.2.0'
 
-depends 'chef-vault'
+depends 'chef-vault', '~> 2.1.1'
 
 %w{redhat centos scientific fedora debian ubuntu arch freebsd amazon}.each do |os|
   supports os
